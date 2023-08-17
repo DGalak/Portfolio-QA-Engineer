@@ -1,0 +1,37 @@
+
+.navbar__row {
+    display: flex;
+}
+.item {
+    font-size: 20px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+@media (max-width: 1020px) {
+    .menu__size li.item {
+        font-size: 10px;
+        margin: 10px;
+    }
+}
+.navbar__item-link {
+    color: white;
+}
+.menu__color {
+    margin: 10px 0 0 0;
+}
+@media (max-width: 721px) {
+    .item {
+        font-size: 20px;
+        margin: 5px;
+        text-transform: uppercase;
+    }
+}
+.menu__color a.navbar__item-link {
+    color: #586379;
+}
+.menu__color a.navbar__item-link.active {
+    color: black;
+}
+a.navbar__item-link.active {
+    color: #586379;
+}

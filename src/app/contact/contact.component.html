@@ -1,0 +1,64 @@
+<div class="wrapper">
+    <div class="left-section">
+        <div class="container"> 
+            <div class="left-section__menu">
+                <app-header [about__item_link]="'menu__size'"  >
+        
+                </app-header>
+            </div>
+            <form [formGroup]="form" action="javascript:void(0)" (submit)="send()">                           
+                <div class="form__field">
+                    <input
+                    formControlName="from_name"
+                    name="name"
+                    id="name"
+                    class="form__field_text"
+                    type="text"
+                    placeholder="NAME">
+                    <span
+                    class="form__field_error_message"
+                    *ngIf="!form.get('from_name')?.valid && form.get('from_name')?.touched">
+                    Please enter a name!</span>
+                </div>           
+                <div class="form__field">
+                    <input
+                    formControlName="from_email"
+                    name="email"
+                    id="email"
+                    class="form__field_text"
+                    type="email"
+                    placeholder="EMAIL">
+                    <span
+                    class="form__field_error_message"
+                    *ngIf="!form.get('from_email')?.valid && form.get('from_email')?.touched">
+                    Please enter a valid email!</span>
+                </div>                       
+                <div class="form__field">
+                    <textarea
+                    formControlName="message"
+                    name="message"
+                    id="message"
+                    class="form__field_text"
+                    name="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="MESSAGE"></textarea>
+                    <span
+                    class="form__field_error_message"
+                    *ngIf="!form.get('message')?.valid && form.get('message')?.touched">
+                    Please enter a message!</span>
+                </div>                                
+                    <div class="form__btn">
+                        <button [disabled]="!form.valid" class="btn btn-submit" type="submit">Send</button>
+                        <button class="btn btn-clear" type="button" (click)="reset()">Clear</button>
+                    </div>                           
+            </form>
+        </div>
+        <span class="left-section__line">
+            <img class="left-section__line_car" src="../../assets/icons/Shape.png" alt="">
+        </span>
+    </div>
+    <div class="right-section">
+        <span class="right-section_gradient"></span>
+    </div>
+</div>    

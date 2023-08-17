@@ -1,0 +1,23 @@
+<div class="wrapper"
+[ngClass]="about__item_link">
+    <nav class="navbar">       
+        <ul class="navbar__row">
+            <li class="item">
+                <a
+                class="navbar__item-link" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}" 
+                routerLink="/">Home</a></li>
+            <li class="item">
+                <a
+                class="navbar__item-link" 
+                routerLinkActive="active" 
+                routerLink="/about/me">About Me</a></li>
+            <li class="item">
+                <a 
+                class="navbar__item-link" 
+                routerLinkActive="active" 
+                [routerLink]="['/contact']">Contact</a></li>
+        </ul>       
+    </nav>
+</div>
