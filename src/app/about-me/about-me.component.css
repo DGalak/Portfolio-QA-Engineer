@@ -229,6 +229,28 @@
     }
 }
 @media (max-width: 630px) {
+    .list-item__name {
+        font-size: 70px;
+        line-height: 94px;
+        font-weight: 600;
+        color: #2c323d;
+        text-align: center;
+    }
+    .list-item__profession {
+        font-size: 30px;
+        line-height: 85px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #363636;
+        text-align: center
+    }
+    .right-side__menu {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 20px;
+        left: 0px;
+    }
     .list-item__title_text_right {
         font-size: 27px;
     }
@@ -241,11 +263,5 @@
     .wrapper {
         display: flex;
         flex-direction: column-reverse;
-    }
-    .left-section__line_car {
-        position: absolute;
-        bottom: 100%;
-        right: 22%;
-        width: 10%
     }
 }

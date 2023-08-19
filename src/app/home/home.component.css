@@ -114,24 +114,29 @@
     }
 }
 @media (max-width: 540px) {
+    .second-block__middle_gradient {
+        display: block;
+        background: linear-gradient(to bottom, rgba(86,234,228,0.5) 10%,rgba(86,234,228,0.5) 40%,rgba(25,25,25, 0.1) 100%);
+        flex: 0 1 71.4%;
+        display: flex;
+        align-items: center;
+    }
     .second-block__middle_gradient_text_name {
-        font-size: 30;
+        font-size: 30px;
     }
     .second-block__middle_gradient_profession {
         font-size: 17px;
     }
     .second-block__middle {
         display: flex;
-        flex-direction: column-reverse;
     }
     .second-block__left_line {
         position: relative;
-        top: 89.7%;
+        top: 0;
         left: 0;
     }
     .second-block_right_line {
         position: relative;
-        top: 110.3px;
         left: 0;
     }
     .second-block_right_line_car {
@@ -139,6 +144,9 @@
     }
     .first-block__menu {
         margin: 20px auto;
+    }
+    .second-block__middle_gradient_text {
+        padding: 0 0 0 10px;
     }
 }
 

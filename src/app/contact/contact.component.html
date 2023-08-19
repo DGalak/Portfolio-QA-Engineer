@@ -48,10 +48,10 @@
                     *ngIf="!form.get('message')?.valid && form.get('message')?.touched">
                     Please enter a message!</span>
                 </div>                                
-                    <div class="form__btn">
-                        <button [disabled]="!form.valid" class="btn btn-submit" type="submit">Send</button>
-                        <button class="btn btn-clear" type="button" (click)="reset()">Clear</button>
-                    </div>                           
+                <div class="form__btn">
+                    <button [disabled]="!form.valid" class="btn btn-submit" type="submit">Send</button>
+                    <button class="btn btn-clear" type="button" (click)="reset()">Clear</button>
+                </div>                           
             </form>
         </div>
         <span class="left-section__line">
