@@ -1,4 +1,6 @@
-
+.wrapper {
+    font-family: 'Rajdhani';
+}
 .navbar__row {
     display: flex;
 }
@@ -31,6 +33,12 @@
 }
 .menu__color a.navbar__item-link.active {
     color: black;
+}
+.menu__size a.navbar__item-link {
+    color: #586379;
+}
+.menu__size a.navbar__item-link.active {
+    color: white;
 }
 a.navbar__item-link.active {
     color: #586379;
