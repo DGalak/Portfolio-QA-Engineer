@@ -1,4 +1,5 @@
 .wrapper {
+    font-family: 'Rajdhani';
     display: flex;
     min-height: 100vh;
 }
@@ -48,6 +49,8 @@
     border-radius: 5px;
 }
 .form__field_text:focus {
+    -moz-box-shadow: 0 0 4px 4px rgb(139, 214, 26);
+    -webkit-box-shadow: 0 0 4px 4px rgb(139, 214, 26);
     box-shadow: 0 0 4px 4px rgb(139, 214, 26);
 }
 .form__field_error_message {
@@ -77,6 +80,8 @@
     background-color: grey;
 }
 .btn-submit:not([disabled]):hover {
+    -moz-box-shadow: 0 0 0 3px rgba(77, 206, 185, 0.687);
+    -webkit-box-shadow: 0 0 0 3px rgba(77, 206, 185, 0.687);
     box-shadow: 0 0 0 3px rgba(77, 206, 185, 0.687);
 }
 @media (max-width: 1020px) {
@@ -136,6 +141,8 @@
     
 }
 .form__field_text.ng-invalid.ng-touched {
+    -moz-box-shadow: 0 0 4px 4px red;
+    -webkit-box-shadow: 0 0 4px 4px red;
     box-shadow: 0 0 4px 4px red;
 }
 
